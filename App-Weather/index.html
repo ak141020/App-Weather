@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="logo">W</div>
+      <div>
+        <h1>Weather Checker</h1>
+        <p class="lead">Enter a city to get the current weather (Celsius).</p>
+      </div>
+    </header>
+
+    <form id="weather-form" aria-label="weather form">
+      <input id="city-input" type="text" placeholder="City name (e.g. Mumbai)" required aria-label="city name" />
+      <button id="submit-btn" type="submit">Submit</button>
+    </form>
+
+    <div id="result-area" aria-live="polite"></div>
+    <div id="error" class="error" style="display:none"></div>
+
+    <footer>
+      <div>Data from OpenWeatherMap. Replace the API key in <code>script.js</code> with your own.</div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
